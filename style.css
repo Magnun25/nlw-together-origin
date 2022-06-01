@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@100;400;700&display=swap');
+
+:root {
+  --primary-font: 'Poppins', 'DM Sans', sans-serif;
+
+  --dark: hsla(159, 41%, 10%, 1);
+  --primary-color: hsla(159, 36%, 57%, 1);
+  --secondary-color: hsla(159, 65%, 88%, 1);
+  --background-color-1: hsla(0, 0%, 98%, 1);
+  --background-color-2: hsla(0, 0%, 100%, 1);
+  --light-gray: hsl(0, 0%, 89%, 1);
+  
+  font-size: 62.5%;
+}
+
+
+/* --------- GERAL ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: var(--primary-font);
+  max-width: 37.5rem;
+  margin: auto;
+}
+/* ---------- HEADER ---------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-inline: 2.4rem ;
+
+  height: 7.2rem;
+
+  border-bottom: 1px solid var(--light-gray);
+}
+header h1 {
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+}
+
+header h1 span {
+  color: var(--primary-color);
+}
+
+/* ---------- MAIN ------------ */
+
+section div.img {
+  width: 37.5rem;
+  height: 26.3rem;
+
+  position: relative;
+}
+
+section div.bg-img {
+
+  width: 33.7rem;
+  height: 23.8rem;
+
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+
+main section img {
+  width: 32.8rem;
+  height: 22.2rem;
+
+  position: absolute;
+  top: 23px;
+
+  border-radius: 4px;
+}
+
+
+/* CONTINUAR 1:02h */
