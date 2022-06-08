@@ -3,14 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@100;400;700&display=swap');
 
 :root {
-  --primary-font: 'Poppins', 'DM Sans', sans-serif;
-
-  --dark: hsla(159, 41%, 10%, 1);
-  --primary-color: hsla(159, 36%, 57%, 1);
-  --secondary-color: hsla(159, 65%, 88%, 1);
-  --background-color-1: hsla(0, 0%, 98%, 1);
-  --background-color-2: hsla(0, 0%, 100%, 1);
-  --light-gray: hsl(0, 0%, 89%, 1);
+  --primary-font: 'Poppins', sans-serif;
+  --secundary-font: 'DM Sans', sans-serif;
+/* HSL color mode */
+  --hue: 159;
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
   
   font-size: 62.5%;
 }
@@ -21,64 +24,113 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
+  
 }
 
 body {
-  font-family: var(--primary-font);
-  max-width: 37.5rem;
+  font: ;
+  width: 100vw;
   margin: auto;
+  font-family: var(--secundary-font);
+}
+
+h1 {
+  font-family: var(--primary-font);
+}
+
+main {
+  background-color: var(--background-color-1);
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 /* ---------- HEADER ---------- */
 
-header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding-inline: 2.4rem ;
-
   height: 7.2rem;
 
   border-bottom: 1px solid var(--light-gray);
+  padding-inline: 2.4rem;
 }
-header h1 {
+#header h1 {
   font-weight: 700;
   font-size: 2.1rem;
   line-height: 3.2rem;
 }
 
-header h1 span {
-  color: var(--primary-color);
+#header h1 span {
+  color: var(--base-color);
 }
 
-/* ---------- MAIN ------------ */
+/* ---------- HOME ------------ */
 
-section div.img {
-  width: 37.5rem;
-  height: 26.3rem;
+#home {
+  margin: 0 auto;
+}
+
+#home .image img{
+  border-radius: 4px;
+  width: 32.8rem;
+}
+
+#home .image::before {
+  content: '';
+  
+  position: absolute;
+
+  width: 50rem;
+  background-color: red;
+}
+
+#home h2 {
+  margin-top: 3.4rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-align: center;
+
+}
+
+#home p {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+
+  color: #767676;
+}
+
+#home div.button {
+  width: 21.4rem;
+  height: 5.6rem;
+  
+  margin-bottom: 8rem;
+
+  background-color: var(--primary-color);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   position: relative;
+  left: 50%;
+
+  transform: translate(-50%);
+
 }
 
-section div.bg-img {
-
-  width: 33.7rem;
-  height: 23.8rem;
-
-  background-color: var(--secondary-color);
-  border-radius: 4px;
-}
-
-main section img {
-  width: 32.8rem;
-  height: 22.2rem;
-
-  position: absolute;
-  top: 23px;
-
-  border-radius: 4px;
-}
 
 
 /* CONTINUAR 1:02h */
