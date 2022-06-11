@@ -129,13 +129,16 @@ a {
   color: #767676;
 }
 
-#home div.button {
+#home .text a {
   max-width: 21.4rem;
-  max-height: 5.6rem;
-  
-  margin-bottom: 8rem;
+  height: 5.6rem;
 
-  background-color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+ line-height: 2.1rem;
+
+
+  background-color: var(--base-color);
   border-radius: 4px;
 
   display: flex;
@@ -148,6 +151,8 @@ a {
   transform: translate(-50%);
 
 }
+
+
 
 /* ----------  ABOUT ------------- */
 #about {
