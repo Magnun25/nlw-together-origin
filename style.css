@@ -31,6 +31,7 @@ body {
   max-width: 100vw;
   margin: auto;
   font-family: var(--secundary-font);
+  background-color: var(--body-color);
 }
 
 h1 {
@@ -45,6 +46,11 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.container {
+  margin-block: 8rem;
+}
+
 /* ---------- HEADER ---------- */
 
 #header {
@@ -54,7 +60,7 @@ a {
 
   height: 7.2rem;
 
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--text-color-light);
   padding-inline: 2.4rem;
 }
 #header h1 {
@@ -69,26 +75,36 @@ a {
 
 /* ---------- HOME ------------ */
 
-#home {
+#home .container{
+  margin-top: 0;
 }
 
 #home .image {
+  margin: auto;
+  margin-top: 3.2rem;
+  width: 37.5rem;
+  height: 26.3rem;
+  position: relative;
+
 }
 
 #home .image img{
   border-radius: 4px;
-  max-width: 56.1rem;
+  max-width: 32.8rem;
+  margin-top: 4.1rem;
   position: relative;
 }
 
 #home .image::before {
   content: '';
-
   position: absolute;
-
+  top: 0;
+  right: 0;
+  width: 33.7rem;
+  height: 23.8rem;
   border-radius: 4px;
 
-  background-color: red;
+  background-color: var(--base-color-second);
 }
 
 #home h2 {
