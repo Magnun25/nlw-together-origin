@@ -51,6 +51,34 @@ a {
   padding-block: 8rem;
 }
 
+.text {
+  padding-inline: 2.4rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+h2 {
+  margin-top: 3.4rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-align: center;
+
+}
+
+p {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+
+  color: #767676;
+}
+
 /* ---------- HEADER ---------- */
 
 #header {
@@ -107,35 +135,13 @@ a {
   background-color: var(--base-color-second);
 }
 
-#home h2 {
-  margin-top: 3.4rem;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 4.5rem;
-  text-align: center;
-
-}
-
-#home p {
-  font-family: 'DM Sans';
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  text-align: center;
-
-  margin-top: 1.6rem;
-  margin-bottom: 3.2rem;
-
-  color: #767676;
-}
-
 #home .text a {
   max-width: 21.4rem;
   height: 5.6rem;
 
   font-size: 1.6rem;
   font-weight: 500;
- line-height: 2.1rem;
+  line-height: 2.1rem;
 
 
   background-color: var(--base-color);
@@ -183,3 +189,18 @@ a {
 
   background-color: var(--base-color-second);
 }
+
+#about .text h2,
+#about .text p  {
+  text-align: left;
+  max-width: 50rem;
+}
+
+#about .text h2 {
+  max-width: 50rem;
+  margin-top: 3.3rem;
+  margin-bottom: 1.6rem;
+}
+
+/* --------- SERVICES ------------ */
+
