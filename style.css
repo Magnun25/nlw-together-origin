@@ -6,12 +6,12 @@
   --primary-font: 'Poppins', sans-serif;
   --secundary-font: 'DM Sans', sans-serif;
 /* HSL color mode */
-  --hue: 100;
+  --hue: 200;
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
+  --text-color: #757575;
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
   
