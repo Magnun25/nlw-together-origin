@@ -6,7 +6,7 @@
   --primary-font: 'Poppins', sans-serif;
   --secundary-font: 'DM Sans', sans-serif;
 /* HSL color mode */
-  --hue: 200;
+  --hue: 100;
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -31,7 +31,6 @@ body {
   margin: auto;
   font-family: var(--secundary-font);
   background-color: var(--body-color);
-  overflow-x: hidden;
 }
 
 h1 {
@@ -52,17 +51,23 @@ a {
 }
 
 .text {
-  padding-inline: 2.4rem;
   max-width: 50rem;
   margin: auto;
+  padding: 2.4rem;
+
 }
 
 h2 {
-  margin-top: 3.4rem;
   font-weight: 700;
   font-size: 3rem;
   line-height: 4.5rem;
-  text-align: center;
+  text-align: left;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
 
 }
 
@@ -71,10 +76,7 @@ p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.1rem;
-  text-align: center;
-
-  margin-top: 1.6rem;
-  margin-bottom: 3.2rem;
+  text-align: left;
 
   color: #767676;
 }
@@ -102,6 +104,10 @@ p {
   color: var(--base-color);
 }
 
+#header svg path[stroke*="#69B99D"] {
+  stroke: var(--base-color)
+}
+
 /* ---------- HOME ------------ */
 #home {
   border-bottom: 1px solid;
@@ -115,16 +121,17 @@ p {
 #home .image {
   margin: auto;
   margin-top: 3.2rem;
-  width: 37.5rem;
-  height: 26.3rem;
+  max-width: 37.5rem;
+  max-height: 26.3rem;
   position: relative;
 }
 
 #home .image img{
   border-radius: 4px;
-  max-width: 32.8rem;
+  max-width: 90%;
   margin-top: 4.1rem;
   position: relative;
+  
 }
 
 #home .image::before {
@@ -132,10 +139,9 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  width: 33.7rem;
-  height: 23.8rem;
+  width: 90%;
+  height: 90%;
   border-radius: 4px;
-
   background-color: var(--base-color-second);
 }
 
@@ -173,13 +179,13 @@ p {
 
 #about .image img{
   border-radius: 4px;
-  max-width: 37.5rem;
+  max-width: 100%;
   position: relative;
 }
 
 #about .image {
   margin: auto;
-  width: 37.5rem;
+  max-width: 37.5rem;
   position: relative;
   margin-top: 2.1rem;
 }
@@ -189,8 +195,8 @@ p {
   position: absolute;
   top: -2.1rem;
   left: -12rem;
-  width: 37.5rem;
-  height: 23.8rem;
+  width: 90%;
+  height: 90%;
   border-radius: 4px;
 
   background-color: var(--base-color-second);
@@ -209,21 +215,56 @@ p {
 }
 
 /* --------- SERVICES ------------ */
+#services {
+  padding-inline: 2.4rem ;
+}
 #services .blocks {
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+
 }
 
 #services .block {
-  box-sizing: border-box;
-  max-width: 32.7rem;
-  max-height: 37.2rem;
+  
+  width: 32rem;
+  
 
-  padding-inline: 3.2rem;
+  padding: 5.8rem 3.2rem ;
   
   display: flex;
   flex-direction: column;
 
   justify-content: center;
   align-items: center;
+
+  background: var(--body-color);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+}
+
+#services .block:hover {
+  border-bottom: 4px solid var(--base-color);
+  transition: border 0.4s;
+}
+
+#services .block h3 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+#services .block p {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+
+  text-align: center;
+}
+
+#services .block path[fill*="#69B99D"] {
+  fill: var(--base-color)
 }
 
