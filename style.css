@@ -53,7 +53,7 @@ a {
 .text {
   max-width: 50rem;
   margin: auto;
-  padding: 2.4rem;
+  padding:0 2.4rem;
 
 }
 
@@ -61,14 +61,12 @@ h2 {
   font-weight: 700;
   font-size: 3rem;
   line-height: 4.5rem;
-  text-align: left;
 }
 
 h3 {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.6rem;
-
 }
 
 p {
@@ -76,9 +74,12 @@ p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.1rem;
-  text-align: left;
 
   color: #767676;
+}
+
+span {
+  color: var(--base-color);
 }
 
 /* ---------- HEADER ---------- */
@@ -100,10 +101,6 @@ p {
   line-height: 3.2rem;
 }
 
-#header h1 span {
-  color: var(--base-color);
-}
-
 #header svg path[stroke*="#69B99D"] {
   stroke: var(--base-color)
 }
@@ -121,8 +118,8 @@ p {
 #home .image {
   margin: auto;
   margin-top: 3.2rem;
-  max-width: 37.5rem;
-  max-height: 26.3rem;
+  max-width: 65.8rem;
+  max-height: 44.3rem;
   position: relative;
 }
 
@@ -131,18 +128,30 @@ p {
   max-width: 90%;
   margin-top: 4.1rem;
   position: relative;
-  
 }
 
 #home .image::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -3rem;
   right: 0;
+  margin-top: 3.2rem;
   width: 90%;
-  height: 90%;
+  height: 75%;
   border-radius: 4px;
   background-color: var(--base-color-second);
+}
+#home .text {
+  text-align: center;
+}
+
+#home .text h2 {
+  margin-top: 3.4rem;
+  margin-bottom: 1.6rem;
+}
+
+#home .text p {
+  margin-bottom: 3.2rem;
 }
 
 #home .text a {
@@ -177,18 +186,20 @@ p {
   border-image: linear-gradient(to left, white, var(--base-color)) 1;
 }
 
+#about .image {
+  margin: auto;
+  max-width: 61.7rem;
+  max-height: 41.2rem;
+  position: relative;
+  margin-top: 2.1rem;
+}
+
 #about .image img{
   border-radius: 4px;
   max-width: 100%;
   position: relative;
 }
 
-#about .image {
-  margin: auto;
-  max-width: 37.5rem;
-  position: relative;
-  margin-top: 2.1rem;
-}
 
 #about .image::before {
   content: '';
@@ -208,6 +219,10 @@ p {
   max-width: 50rem;
 }
 
+#about .text p {
+  margin-bottom: 1.6rem;
+}
+
 #about .text h2 {
   max-width: 50rem;
   margin-top: 3.3rem;
@@ -218,6 +233,15 @@ p {
 #services {
   padding-inline: 2.4rem ;
 }
+#services .text h2 {
+  margin-bottom: 1.6rem;
+}
+
+#services .text p {
+  margin-bottom: 6.4rem;
+}
+
+
 #services .blocks {
   display: flex;
   flex-wrap: wrap;
@@ -230,9 +254,7 @@ p {
 #services .block {
   
   width: 32rem;
-  
-
-  padding: 5.8rem 3.2rem ;
+  max-height: 37.2rem;
   
   display: flex;
   flex-direction: column;
@@ -249,13 +271,17 @@ p {
   transition: border 0.4s;
 }
 
+#services .block svg {
+  margin: 5.8rem 0 2.4rem 0;
+}
+
 #services .block h3 {
-  margin-top: 2.4rem;
   margin-bottom: 1.2rem;
 }
 
 #services .block p {
-  margin: 0;
+  padding:0 3.2rem;
+  margin-bottom: 5.8rem;
 
   font-weight: 400;
   font-size: 1.6rem;
